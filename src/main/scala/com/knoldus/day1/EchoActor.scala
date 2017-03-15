@@ -3,7 +3,7 @@ package com.knoldus.day1
 import akka.actor.{Actor, ActorSystem, Props}
 
 /**
-  * Created by harmeet on 15/3/17.
+  * Created by Harmeet Singh(Taara) on 15/3/17.
   */
 class EchoActor extends Actor {
 
