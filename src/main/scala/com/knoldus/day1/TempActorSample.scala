@@ -25,7 +25,9 @@ object TempActorSample extends App {
   implicit val timeout = Timeout(1000 seconds)
   import scala.concurrent.ExecutionContext.Implicits.global
 
-  val f = ref ? "Give me address"
+  println(ref.path)
+
+  val f = ref ? "Give my address"
 
   f foreach println _
 }

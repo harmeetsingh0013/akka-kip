@@ -39,7 +39,6 @@ class SideEffectingActorSpec extends TestKit(testSystem) with WordSpecLike
           .intercept{
             ref ! "World"
           }
-
     }
 
     "say something else and see what happens" in {

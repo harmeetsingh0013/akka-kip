@@ -16,5 +16,6 @@ class SendingActor(ref: ActorRef) extends Actor {
 }
 
 object SendingActor {
-  def props(ref: ActorRef) = Props(classOf[SendingActor], ref)
+  def props(ref: ActorRef) =
+    Props(classOf[SendingActor], ref)
 }
