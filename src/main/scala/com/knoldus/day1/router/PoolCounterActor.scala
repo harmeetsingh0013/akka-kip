@@ -1,10 +1,10 @@
-package com.knoldus.day2.router
+package com.knoldus.day1.router
 
 import akka.actor.{Actor, ActorSystem, Props}
 import akka.pattern.ask
 import akka.routing.{BalancingPool, FromConfig, RoundRobinPool}
 import akka.util.Timeout
-import com.knoldus.day2.router.PoolCounterActor.State
+import com.knoldus.day1.router.PoolCounterActor.State
 import com.typesafe.config.ConfigFactory
 
 import scala.concurrent.duration.DurationInt

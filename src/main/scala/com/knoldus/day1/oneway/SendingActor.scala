@@ -1,4 +1,4 @@
-package com.knoldus.day2.oneway
+package com.knoldus.day1.oneway
 
 import akka.actor.{Actor, ActorRef, Props}
 

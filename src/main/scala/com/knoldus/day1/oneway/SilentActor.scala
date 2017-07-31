@@ -1,7 +1,7 @@
-package com.knoldus.day2.oneway
+package com.knoldus.day1.oneway
 
 import akka.actor.{Actor, ActorRef}
-import com.knoldus.day2.oneway.SilentActor.GetState
+import com.knoldus.day1.oneway.SilentActor.GetState
 
 /**
   * Created by harmeet on 16/3/17.

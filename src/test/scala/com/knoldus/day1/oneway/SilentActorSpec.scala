@@ -1,8 +1,8 @@
-package com.knoldus.day2.oneway
+package com.knoldus.day1.oneway
 
 import akka.actor.{ActorSystem, Props}
 import akka.testkit.{TestActorRef, TestKit}
-import com.knoldus.day2.oneway.SilentActor.GetState
+import com.knoldus.day1.oneway.SilentActor.GetState
 import org.scalatest.{BeforeAndAfterAll, MustMatchers, WordSpecLike}
 
 
