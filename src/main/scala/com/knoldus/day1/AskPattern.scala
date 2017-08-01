@@ -14,10 +14,13 @@ class TeaSeller extends Actor {
 
   override def receive = {
     case Tea =>
+      println("Tea")
       sender() ! "Superb Tea ... "
     case Smosa =>
+      println("Smosa")
       sender() ! "Spicy Smosa with Chatni ... "
     case msg =>
+      println(msg)
       sender() ! "Sorry not available .. "
   }
 }
@@ -28,8 +31,8 @@ case object Mathi
 
 object TellPattern extends App {
 
-  val system = ActorSystem("TellPattern")
-  val props = Props[TeaSeller];
+  val system = ActorSystem("AskPattern")
+  val props = Props[TeaSeller]
   val ref = system.actorOf(props)
 
   implicit val timeout = Timeout(1000 seconds)

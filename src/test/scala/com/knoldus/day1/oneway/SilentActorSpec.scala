@@ -34,7 +34,7 @@ class SilentActorSpec extends TestKit(ActorSystem("test-system")) with WordSpecL
       ref ! "increase counter"
 
       ref ! GetState(testActor)
-      expectMsg(4)
+      expectMsg(5)
     }
   }
 }

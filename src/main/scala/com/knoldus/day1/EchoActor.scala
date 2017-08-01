@@ -7,7 +7,7 @@ import akka.actor.{Actor, ActorSystem, Props}
   */
 class EchoActor extends Actor {
 
-  var counter = 0;
+  var counter = 0
 
   override def receive = {
     case msg =>
@@ -18,12 +18,12 @@ class EchoActor extends Actor {
 
 object EchoActor extends App {
 
-  val system = ActorSystem("EchoActor")
+  val system = ActorSystem("EchoActorSystem")
   val props = Props[EchoActor];
   val ref = system.actorOf(props)
   ref ! "Welcome to Knoldus .. :D "
   println(ref.path)
 
-  val selection = system.actorSelection(ref.path)
-  selection ! "Hey team Actor Selection working ... "
+//  val selection = system.actorSelection(ref.path)
+//  selection ! "Hey team Actor Selection working ... "
 }
